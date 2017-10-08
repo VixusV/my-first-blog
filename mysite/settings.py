@@ -25,7 +25,7 @@ SECRET_KEY = '@6e47cpx=wu@5zpf1r*aa2!zlpo**7qgop1e(ou5#20dlfl&(d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["vixusv.pythonanywhere.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
