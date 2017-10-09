@@ -8,17 +8,12 @@
         <div>
             <h1><a href="">Vixus Blog</a></h1>
         </div>
-
-        <div>
-            <p>published: 08.10.2014, 20:40</p>
-            <h2><a href="">Mi primer post</a></h2>
-            <p>Ella no te quiere :'v</p>
-        </div>
-
-        <div>
-            <p>published: 08.10.2017, 20:40</p>
-            <h2><a href="">Mi segundo post</a></h2>
-            <p>Ella aun no te quiere :'v</p>
-        </div>
+        {% for post in posts %}
+            <div>
+                <p>publicado: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
